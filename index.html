@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rivaldo &amp; Merlinda — Undangan Pernikahan</title>
+<meta name="description" content="Undangan pernikahan Rivaldo Onim Da Costa &amp; Merlinda Florense Mumut, Senin 28 September 2026.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Alex+Brush&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Gate / Sampul ===== -->
+<div id="gate">
+  <div class="gate-frame">
+    <div>
+      <div class="gate-eyebrow">The Wedding Of</div>
+      <div class="gate-names script">Rivaldo</div>
+      <div class="gate-amp">&amp;</div>
+      <div class="gate-names script">Merlinda</div>
+    </div>
+    <svg class="ring-mini" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <circle cx="24" cy="34" r="14" stroke="#b0894f" stroke-width="2"/>
+      <circle cx="40" cy="34" r="14" stroke="#b0894f" stroke-width="2"/>
+    </svg>
+    <div>
+      <div class="gate-to">Kepada Bapak/Ibu/Saudara/i<br><b>Tamu Undangan</b></div>
+      <button id="open-btn" type="button">Buka Undangan</button>
+      <div class="gate-sub">Senin, 28 September 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tombol kontrol musik -->
+<button id="music-toggle" type="button" aria-label="Putar musik" aria-pressed="false">
+  <svg id="icon-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+  <svg id="icon-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" hidden><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<audio id="bgm" src="assets/piano.mp3" loop preload="none"></audio>
+
+<!-- ===== Hero ===== -->
+<section id="hero" class="wrap center">
+  <p class="eyebrow reveal">Pernikahan</p>
+  <p class="hero-verse reveal">
+    &ldquo;Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.&rdquo;
+    <cite>Matius 19 : 9</cite>
+  </p>
+
+  <div class="photo-arch reveal">
+    <img
+      src="assets/couple.jpg"
+      alt="Rivaldo dan Merlinda mengenakan busana adat"
+      loading="lazy"
+      decoding="async"
+      width="810" height="1000">
+  </div>
+
+  <p class="lead reveal">
+    Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan putra dan putri kami.
+  </p>
+</section>
+
+<!-- ===== Mempelai ===== -->
+<section id="mempelai" class="wrap center">
+  <div class="reveal">
+    <p class="who">Putra Ketiga dari</p>
+    <p class="parents">Bapak Rofinus Gandur &amp; Ibu Romana Gimut</p>
+    <h2 class="name-script script">Rivaldo Onim Da Costa</h2>
+  </div>
+
+  <svg class="rings reveal" viewBox="0 0 80 60" fill="none" aria-hidden="true">
+    <circle cx="30" cy="34" r="17" stroke="#b0894f" stroke-width="2"/>
+    <circle cx="50" cy="34" r="17" stroke="#b0894f" stroke-width="2"/>
+  </svg>
+
+  <div class="reveal">
+    <h2 class="name-script script">Merlinda Florense Mumut</h2>
+    <p class="who">Putri Pertama dari</p>
+    <p class="parents">Bapak Siprianus Sampur (Alm) &amp; Ibu Maria Saima</p>
+  </div>
+
+  <p class="invite-line reveal">
+    Merupakan suatu kehormatan bagi kami jika Anda berkenan memeriahkan hari bahagia kami.
+  </p>
+</section>
+
+<!-- ===== Countdown ===== -->
+<section id="countdown" class="wrap center">
+  <div class="divider reveal"></div>
+  <p class="eyebrow reveal">Menghitung Hari</p>
+  <p class="cd-date reveal">Senin, 28 September 2026</p>
+  <div class="cd-grid reveal" role="timer" aria-live="off">
+    <div class="cd-box"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Hari</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Jam</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Menit</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Detik</div></div>
+  </div>
+</section>
+
+<!-- ===== Acara ===== -->
+<section id="acara" class="wrap center">
+  <div class="divider reveal"></div>
+  <p class="eyebrow reveal">Rangkaian Acara</p>
+  <div class="event-grid reveal">
+    <div class="event-card">
+      <h3>Pemberkatan</h3>
+      <p class="event-time">10.00 WITA</p>
+      <p class="event-place">Gereja St. Mikael<br>Kumba</p>
+      <a class="map-link" href="https://www.google.com/maps/search/Gereja+St.+Mikael+Kumba" target="_blank" rel="noopener">Lihat Lokasi</a>
+    </div>
+    <div class="event-card">
+      <h3>Resepsi</h3>
+      <p class="event-time">12.00 WITA — Selesai</p>
+      <p class="event-place">Halaman Rumah Bpk. Siprianus Sampur (Alm)<br>Depan Kampus STIE Karya Ruteng</p>
+      <a class="map-link" href="https://www.google.com/maps/search/STIE+Karya+Ruteng" target="_blank" rel="noopener">Lihat Lokasi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Turut Mengundang ===== -->
+<section id="tamu" class="wrap center">
+  <div class="divider reveal"></div>
+  <p class="eyebrow reveal">Turut Mengundang</p>
+  <div class="guest-cols reveal">
+    <div class="guest-col">
+      <h4>Keluarga Besar Mempelai Pria</h4>
+      <ul>
+        <li>Bpk. Rofinus Gandur</li>
+        <li>Bpk. Salesius Medi</li>
+        <li>Bpk. Vinsensius Jon Basri</li>
+        <li>Bpk. Kornelis Santur</li>
+        <li>Bpk. Kasmir Jusnim</li>
+        <li>Bpk. Frasiskus Malar</li>
+        <li>Kel. Besar Peot Borong</li>
+        <li>Kel. Besar Sentra Tani</li>
+      </ul>
+    </div>
+    <div class="guest-col">
+      <h4>Keluarga Besar Mempelai Wanita</h4>
+      <ul>
+        <li>Bpk. Andreas Ogos</li>
+        <li>Bpk. Fernandes Sebatu</li>
+        <li>Bpk. Yohanes Hambur</li>
+        <li>Bpk. Aleksius Odar</li>
+        <li>Bpk. Edi Evans</li>
+        <li>Bpk. Lasarus Harsan</li>
+        <li>Kel. Besar Kumba</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RSVP ===== -->
+<section id="rsvp" class="wrap center">
+  <div class="divider reveal"></div>
+  <p class="eyebrow reveal">Konfirmasi Kehadiran</p>
+  <p class="rsvp-text reveal">
+    Mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i melalui tombol di bawah ini, agar kami dapat mempersiapkan acara dengan lebih baik.
+  </p>
+  <a class="wa-btn reveal" href="https://wa.me/6280000000000?text=Yth.%20Rivaldo%20%26%20Merlinda%2C%20saya%20konfirmasi%20kehadiran%20pada%20acara%20pernikahan%2028%20September%202026." target="_blank" rel="noopener">
+    Konfirmasi via WhatsApp
+  </a>
+</section>
+
+<!-- ===== Closing ===== -->
+<section id="closing" class="wrap center">
+  <div class="divider reveal"></div>
+  <p class="closing-quote reveal">
+    Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i, kami mengucapkan terima kasih.
+  </p>
+  <p class="closing-names script reveal">Rivaldo &amp; Merlinda</p>
+</section>
+
+<footer>Senin, 28 September 2026 &middot; Ruteng</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
